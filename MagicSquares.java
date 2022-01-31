@@ -36,7 +36,7 @@ final class MagicSquares {
       return false;
     }
     
-    // The the array has repeating numbers, return false;
+    // If the the array has repeating numbers, return false.
     for (int outerCounter = 0; outerCounter < intArray.length; ++outerCounter) {
       for (int innerCounter = 0; innerCounter < intArray.length; ++innerCounter) {
         if (outerCounter == innerCounter) {
