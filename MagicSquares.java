@@ -47,7 +47,7 @@ final class MagicSquares {
       }
     }
 
-    // If the horizontal sums don't add up to 15, return false.
+    // If the horizontal sums aren't 15, return false.
     for (int horizontalCounter = 0; horizontalCounter < 6; horizontalCounter += 3) {
       if (intArray[horizontalCounter] + intArray[horizontalCounter + 1]
           + intArray[horizontalCounter + 2] != 15) {
@@ -55,7 +55,7 @@ final class MagicSquares {
       }
     }
 
-    // If the vertical sums don't add up to 15, return false.
+    // If the vertical sums aren't 15, return false.
     for (int verticalCounter = 0; verticalCounter < intArray.length / 3; ++verticalCounter) {
       if (intArray[verticalCounter] + intArray[verticalCounter + 3]
           + intArray[verticalCounter + 6] != 15) {
@@ -63,7 +63,7 @@ final class MagicSquares {
       }
     }
     
-    // If the main diagonal sums don't add up to 15, return false.
+    // If the main diagonal sums aren't 15, return false.
     if (intArray[0] + intArray[4] + intArray[8] != 15 || intArray[2] + intArray[4]
         + intArray[6] != 15) {
       return false;
